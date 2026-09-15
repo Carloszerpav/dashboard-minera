@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Propuesta interactiva del ecosistema documental Adobe para la minería chilena."
+    />
+    <title>Adobe · Inteligencia documental para minería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#resumen" aria-label="Ir al resumen">
+          <span class="brand-mark"><img src="assets/adobe-logo.png" alt="Adobe" /></span>
+          <span>
+            <strong>Adobe</strong>
+            <small>Inteligencia documental</small>
+          </span>
+        </a>
+
+        <nav class="side-nav" aria-label="Navegación principal">
+          <a class="nav-link active" href="#resumen" data-section="resumen">
+            <span class="nav-index">01</span><span>Visión ejecutiva</span>
+          </a>
+          <a class="nav-link" href="#oportunidad" data-section="oportunidad">
+            <span class="nav-index">02</span><span>Oportunidad</span>
+          </a>
+          <a class="nav-link" href="#solucion" data-section="solucion">
+            <span class="nav-index">03</span><span>Solución</span>
+          </a>
+          <a class="nav-link" href="#casos" data-section="casos">
+            <span class="nav-index">04</span><span>Casos de uso</span>
+          </a>
+          <a class="nav-link" href="#confianza" data-section="confianza">
+            <span class="nav-index">05</span><span>Confianza</span>
+          </a>
+          <a class="nav-link" href="#piloto" data-section="piloto">
+            <span class="nav-index">06</span><span>Piloto y valor</span>
+          </a>
+          <a class="nav-link" href="#fuentes" data-section="fuentes">
+            <span class="nav-index">07</span><span>Evidencia</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-note">
+          <span class="status-dot"></span>
+          <div>
+            <small>Documento de trabajo</small>
+            <strong>Preventa · Chile 2026</strong>
+            <span class="author-credit">Desarrollado por Carlos Zerpa</span>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="product-flag">
+            <span class="product-flag-mark"><img src="assets/adobe-logo.png" alt="" /></span>
+            <span><b>Adobe</b><small>Propuesta documental para minería</small></span>
+          </div>
+          <div class="view-toggle" role="group" aria-label="Nivel de detalle">
+            <button class="active" data-view="executive">Ejecutiva</button>
+            <button data-view="technical">Técnica</button>
+          </div>
+        </header>
+
+        <section class="hero section" id="resumen">
+          <div class="eyebrow"><span></span> ADOBE × SOFTWAREONE × MINERÍA</div>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <h1><span>Adobe:</span> del documento disperso a la <em>decisión segura.</em></h1>
+              <p>
+                La propuesta Adobe que convierte procedimientos, reportes e incidentes en
+                conocimiento trazable, accionable y fácil de comunicar.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#solucion">Explorar solución <span>↘</span></a>
+                <a class="button ghost" href="#piloto">Diseñar piloto</a>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Flujo de conocimiento documental">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="core-card">
+                <span class="core-icon"><img src="assets/adobe-logo.png" alt="Adobe" /></span>
+                <small>ECOSISTEMA ADOBE</small>
+                <strong>Documento a decisión</strong>
+                <div class="confidence-row">
+                  <span>Respuesta trazable</span>
+                  <b>Fuente ↗</b>
+                </div>
+              </div>
+              <div class="float-chip chip-a"><i></i> Acrobat</div>
+              <div class="float-chip chip-b"><i></i> PDF Services</div>
+              <div class="float-chip chip-c"><i></i> Acrobat Studio</div>
+              <div class="float-chip chip-d"><i></i> Acrobat Sign</div>
+            </div>
+          </div>
+
+          <div class="signal-strip">
+            <article>
+              <strong>50+</strong>
+              <span>dominios SharePoint</span>
+              <small>Caso Veltis–SoftwareOne</small>
+            </article>
+            <article>
+              <strong>100</strong>
+              <span>pruebas previas</span>
+              <small>Antes de producción</small>
+            </article>
+            <article>
+              <strong>100</strong>
+              <span>archivos por espacio</span>
+              <small>Límite actual PDF Spaces</small>
+            </article>
+            <article>
+              <strong>12 h</strong>
+              <span>caché temporal IA</span>
+              <small>Acrobat AI Assistant</small>
+            </article>
+          </div>
+          <p class="data-note">
+            Los dos primeros datos provienen del comunicado del caso; no representan resultados
+            financieros ni de seguridad.
+          </p>
+        </section>
+
+        <section class="section" id="oportunidad">
+          <div class="section-heading">
+            <div>
+              <span class="section-number">02 / OPORTUNIDAD</span>
+              <h2>Tener respuestas es importante.<br />Convertirlas en acción es lo que genera impacto.</h2>
+            </div>
+            <p>
+              En una faena, la información correcta debe estar vigente, ser accesible para el rol
+              adecuado y conservar una ruta verificable hasta su fuente.
+            </p>
+          </div>
+
+          <div class="problem-grid">
+            <article class="problem-card">
+              <span class="problem-icon">⌕</span>
+              <small>FRICCIÓN 01</small>
+              <h3>Información fragmentada</h3>
+              <p>Procedimientos repartidos entre sitios, carpetas, formatos y versiones.</p>
+              <div class="problem-impact">Tiempo de búsqueda <b>↑</b></div>
+            </article>
+            <article class="problem-card">
+              <span class="problem-icon">≠</span>
+              <small>FRICCIÓN 02</small>
+              <h3>Versión incorrecta</h3>
+              <p>Una respuesta rápida pierde valor si utiliza un procedimiento obsoleto.</p>
+              <div class="problem-impact">Riesgo operacional <b>↑</b></div>
+            </article>
+            <article class="problem-card">
+              <span class="problem-icon">◎</span>
+              <small>FRICCIÓN 03</small>
+              <h3>Conocimiento inmóvil</h3>
+              <p>Lecciones de incidentes y experiencia histórica difíciles de reutilizar.</p>
+              <div class="problem-impact">Aprendizaje <b>↓</b></div>
+            </article>
+          </div>
+
+          <div class="regulation-panel">
+            <div class="regulation-intro">
+              <span class="mini-label">DS 132 · MARCO REGULATORIO</span>
+              <h3>REGLAMENTO DE SEGURIDAD MINERA</h3>
+              <p>
+                Obligaciones documentales que el ecosistema Adobe ayuda a operacionalizar con
+                evidencia, trazabilidad y controles verificables.
+              </p>
+              <div class="reg-tabs" id="regTabs" role="tablist" aria-label="Artículos del reglamento">
+                <button class="active" data-reg="25">Art. 25–26</button>
+                <button data-reg="28">Art. 28</button>
+                <button data-reg="71">Art. 71</button>
+                <button data-reg="75">Art. 75–77</button>
+                <button data-reg="410">Art. 410</button>
+              </div>
+            </div>
+            <article class="reg-detail" id="regDetail" aria-live="polite"></article>
+          </div>
+        </section>
+
+        <section class="section dark-section" id="solucion">
+          <div class="section-heading light">
+            <div>
+              <span class="section-number">03 / SOLUCIÓN</span>
+              <h2>Una arquitectura conjunta.<br />Cada plataforma hace lo que mejor sabe.</h2>
+            </div>
+            <p>
+              Acrobat Studio es la experiencia documental protagonista: complementa la solución
+              multiagente sin reemplazar la búsqueda corporativa ni los permisos de SharePoint.
+            </p>
+          </div>
+
+          <div class="journey-selector" role="tablist" aria-label="Flujos de solución">
+            <button class="active" data-journey="consulta">
+              <span>01</span> Consulta operacional
+            </button>
+            <button data-journey="incidente"><span>02</span> Análisis de incidentes</button>
+            <button data-journey="formacion"><span>03</span> Formación en terreno</button>
+          </div>
+
+          <div class="architecture">
+            <div class="architecture-flow">
+              <article class="architecture-node source active" data-node="source">
+                <div class="node-top"><span>01</span><i></i></div>
+                <small>FUENTE DE VERDAD</small>
+                <h3>SharePoint</h3>
+                <p>Versiones, clasificación y permisos corporativos.</p>
+              </article>
+              <span class="flow-arrow">→</span>
+              <article class="architecture-node engine" data-node="engine">
+                <div class="node-top"><span>02</span><i></i></div>
+                <small>ORQUESTACIÓN</small>
+                <h3>SoftwareOne + AWS</h3>
+                <p>Agentes, búsqueda transversal, perfiles y Teams.</p>
+              </article>
+              <span class="flow-arrow">→</span>
+              <article class="architecture-node adobe" data-node="adobe">
+                <div class="node-top"><span>03</span><i></i></div>
+                <small>EXPERIENCIA DOCUMENTAL</small>
+                <h3>Acrobat Studio</h3>
+                <p>Comprender, verificar, colaborar y comunicar.</p>
+              </article>
+            </div>
+
+            <div class="architecture-detail">
+              <div>
+                <span class="mini-label copper" id="journeyLabel">FLUJO · CONSULTA OPERACIONAL</span>
+                <h3 id="journeyTitle">La persona pregunta; el sistema responde con contexto.</h3>
+              </div>
+              <ol id="journeySteps"></ol>
+            </div>
+          </div>
+
+          <div class="product-ribbon">
+            <div>
+              <span class="product-ribbon-mark"><img src="assets/adobe-logo.png" alt="" /></span>
+              <span><small>PROPUESTA ADOBE</small><strong>Ecosistema documental integrado</strong></span>
+            </div>
+            <p>Comprender, crear, automatizar, aprobar y conservar evidencia.</p>
+          </div>
+          <div class="adobe-stack">
+            <article class="extension-card">
+              <span class="stack-number">A1</span>
+              <div>
+                <small>EXTENSIÓN API · CONSUMO ADICIONAL</small>
+                <h3>PDF Services API</h3>
+                <p>OCR, extracción, conversión, combinación y normalización.</p>
+              </div>
+            </article>
+            <article class="studio-card">
+              <span class="stack-number">AS</span>
+              <div>
+                <small>NÚCLEO DE LA PROPUESTA</small>
+                <h3>Adobe Acrobat Studio</h3>
+                <p>Acrobat Pro, AI Assistant, PDF Spaces y creación integrada.</p>
+              </div>
+            </article>
+            <article class="included-card">
+              <span class="stack-number">A3</span>
+              <div>
+                <small>INCLUIDO EN ACROBAT STUDIO</small>
+                <h3>Adobe Express Premium</h3>
+                <p>Charlas, infografías, presentaciones y piezas de capacitación.</p>
+              </div>
+            </article>
+            <article class="sign-card">
+              <span class="stack-number">A4</span>
+              <div>
+                <small>SOLUCIÓN COMPLEMENTARIA</small>
+                <h3>Adobe Acrobat Sign</h3>
+                <p>Firmas, aprobaciones, seguimiento e informes de auditoría.</p>
+              </div>
+            </article>
+          </div>
+          <div class="technical-only tech-callout">
+            <strong>Límite de diseño clave</strong>
+            <p>
+              PDF Services procesa documentos, pero no indexa repositorios ni implementa RAG. Las
+              credenciales deben mantenerse del lado servidor y los permisos deben comprobarse
+              antes de entregar cada archivo al servicio.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="casos">
+          <div class="section-heading compact">
+            <div>
+              <span class="section-number">04 / CASOS DE USO</span>
+              <h2>Valor visible en el trabajo diario.</h2>
+            </div>
+            <p>Priorizados por impacto, factibilidad y cercanía con la obligación regulatoria.</p>
+          </div>
+
+          <div class="filter-row" id="useCaseFilters" role="group" aria-label="Filtrar casos">
+            <button class="active" data-filter="all">Todos</button>
+            <button data-filter="seguridad">Seguridad</button>
+            <button data-filter="cumplimiento">Cumplimiento</button>
+            <button data-filter="aprendizaje">Aprendizaje</button>
+          </div>
+          <div class="use-case-grid" id="useCaseGrid"></div>
+
+          <div class="case-modal" id="caseModal" hidden>
+            <div class="case-modal-backdrop" data-case-close></div>
+            <section
+              class="case-modal-panel"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="caseModalTitle"
+              aria-describedby="caseModalSummary"
+            >
+              <button class="case-modal-close" type="button" data-case-close aria-label="Cerrar detalle">
+                <span></span><span></span>
+              </button>
+              <div class="case-modal-scroll">
+                <header class="case-modal-header">
+                  <div>
+                    <span class="case-modal-index" id="caseModalIndex">CASO 01</span>
+                    <span class="case-modal-category" id="caseModalCategory">SEGURIDAD</span>
+                  </div>
+                  <h2 id="caseModalTitle"></h2>
+                  <p id="caseModalSummary"></p>
+                </header>
+                <div class="case-modal-body">
+                  <article class="case-detail-block problem">
+                    <span>01 / LA PROBLEMÁTICA</span>
+                    <h3>Fricción operacional en minería</h3>
+                    <p id="caseModalProblem"></p>
+                  </article>
+                  <article class="case-detail-block solution">
+                    <span>02 / SOLUCIÓN ADOBE</span>
+                    <h3>Del documento a la acción</h3>
+                    <p id="caseModalSolution"></p>
+                  </article>
+                  <div class="case-products">
+                    <span>CAPACIDADES INVOLUCRADAS</span>
+                    <div id="caseModalProducts"></div>
+                  </div>
+                  <div class="case-workflow">
+                    <span>FLUJO PROPUESTO</span>
+                    <ol id="caseModalWorkflow"></ol>
+                  </div>
+                  <aside class="case-guardrail">
+                    <strong>Control operacional</strong>
+                    <p id="caseModalGuardrail"></p>
+                  </aside>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="section trust-section" id="confianza">
+          <div class="section-heading compact">
+            <div>
+              <span class="section-number">05 / CONFIANZA Y GOBIERNO</span>
+              <h2>Seguridad demostrable,<br />no promesas absolutas.</h2>
+            </div>
+            <p>
+              La aprobación depende tanto de capacidades Adobe como de decisiones de arquitectura
+              y gobierno del cliente.
+            </p>
+          </div>
+
+          <div class="trust-layout">
+            <div class="trust-score">
+              <div class="score-ring">
+                <span>4</span>
+                <small>controles<br />verificados</small>
+              </div>
+              <p>Base sólida para iniciar una evaluación formal de seguridad.</p>
+            </div>
+            <div class="trust-matrix">
+              <div class="matrix-head">
+                <span>CONTROL</span><span>ESTADO</span><span>EVIDENCIA / ACCIÓN</span>
+              </div>
+              <div class="matrix-row">
+                <strong>No entrenamiento con datos del cliente</strong>
+                <span class="pill verified">Verificado</span>
+                <p>Política oficial de Acrobat AI Assistant.</p>
+              </div>
+              <div class="matrix-row">
+                <strong>Cifrado en tránsito y reposo</strong>
+                <span class="pill verified">Verificado</span>
+                <p>TLS 1.2+ y cifrado de contenido almacenado.</p>
+              </div>
+              <div class="matrix-row">
+                <strong>Retención transitoria</strong>
+                <span class="pill verified">Verificado</span>
+                <p>IA hasta 12 h; activos PDF Services hasta 24 h.</p>
+              </div>
+              <div class="matrix-row">
+                <strong>SOC 2 Type 2 / ISO 27001</strong>
+                <span class="pill verified">Verificado</span>
+                <p>Aplicable a servicios Document Cloud especificados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="benchmark-panel" id="pfeifferBenchmark">
+            <header class="benchmark-header">
+              <div>
+                <span class="mini-label">PFEIFFER CONSULTING · BENCHMARK 2024</span>
+                <h3>Acrobat AI Assistant acelera el trabajo documental.</h3>
+                <p>Comparación de métodos tradicionales frente a flujos asistidos con IA.</p>
+              </div>
+              <div class="benchmark-global">
+                <span>Casi</span>
+                <strong>4×</strong>
+                <small>más rápido<br />en promedio</small>
+              </div>
+            </header>
+
+            <div class="benchmark-legend" aria-hidden="true">
+              <span><i class="traditional-dot"></i>Método tradicional</span>
+              <span><i class="ai-dot"></i>Con AI Assistant</span>
+              <em>Menor tiempo es mejor</em>
+            </div>
+
+            <div class="benchmark-chart" role="img" aria-label="Comparación de tiempos del estudio Pfeiffer para cuatro áreas de negocio">
+              <article class="benchmark-row" style="--ai-width: 24.4%">
+                <div class="benchmark-name">
+                  <span>01</span>
+                  <div><strong>Recursos Humanos</strong><small>Búsqueda y resumen</small></div>
+                </div>
+                <div class="benchmark-bars">
+                  <div class="bar traditional"><span>20 min</span></div>
+                  <div class="bar ai"><span>5 min</span></div>
+                </div>
+                <div class="benchmark-saving"><strong>−76%</strong><span>tiempo</span></div>
+              </article>
+              <article class="benchmark-row" style="--ai-width: 31.7%">
+                <div class="benchmark-name">
+                  <span>02</span>
+                  <div><strong>Finanzas</strong><small>Informe de analista</small></div>
+                </div>
+                <div class="benchmark-bars">
+                  <div class="bar traditional"><span>2 h</span></div>
+                  <div class="bar ai"><span>40 min</span></div>
+                </div>
+                <div class="benchmark-saving"><strong>−68%</strong><span>tiempo</span></div>
+              </article>
+              <article class="benchmark-row" style="--ai-width: 15%">
+                <div class="benchmark-name">
+                  <span>03</span>
+                  <div><strong>Legal y Cumplimiento</strong><small>Resumen legal</small></div>
+                </div>
+                <div class="benchmark-bars">
+                  <div class="bar traditional"><span>60 min</span></div>
+                  <div class="bar ai"><span>9 min</span></div>
+                </div>
+                <div class="benchmark-saving"><strong>−85%</strong><span>tiempo</span></div>
+              </article>
+              <article class="benchmark-row" style="--ai-width: 30.8%">
+                <div class="benchmark-name">
+                  <span>04</span>
+                  <div><strong>Investigación y Desarrollo</strong><small>Presentación técnica</small></div>
+                </div>
+                <div class="benchmark-bars">
+                  <div class="bar traditional"><span>90 min</span></div>
+                  <div class="bar ai"><span>27 min</span></div>
+                </div>
+                <div class="benchmark-saving"><strong>−69%</strong><span>tiempo</span></div>
+              </article>
+            </div>
+
+            <footer class="benchmark-source">
+              <p>
+                16 flujos reales, 154 mediciones. Cifras visuales redondeadas; el benchmark incluyó
+                verificación y edición de resultados. Estudio encargado por Adobe y ejecutado
+                independientemente por Pfeiffer Consulting. No representa resultados específicos
+                de una operación minera.
+              </p>
+              <a
+                href="https://blog.adobe.com/en/publish/2024/06/12/pfeiffer-report-acrobat-ai-assistant-helps-knowledge-workers-complete-document-related-tasks-4x-faster-average"
+                target="_blank"
+                rel="noreferrer"
+              >Ver estudio ↗</a>
+            </footer>
+          </div>
+
+          <div class="legacy-card">
+            <div class="legacy-lead">
+              <span class="legacy-year">1993</span>
+              <span>ACROBAT + PDF</span>
+            </div>
+            <div>
+              <span class="mini-label">TRAYECTORIA DOCUMENTAL</span>
+              <h3>Adobe creó el PDF y lleva más de tres décadas transformando el documento digital.</h3>
+              <p>
+                Acrobat y PDF fueron lanzados formalmente en 1993. Esta trayectoria respalda una
+                evolución que hoy integra creación, gestión, firma e inteligencia documental.
+              </p>
+            </div>
+            <a href="https://www.adobe.com/acrobat/about-adobe-pdf.html" target="_blank" rel="noreferrer">
+              Historia oficial ↗
+            </a>
+          </div>
+
+          <div class="guardrails">
+            <span class="mini-label">GUARDRAILS PROPUESTOS</span>
+            <div>
+              <article><b>01</b><span>SharePoint continúa como fuente oficial.</span></article>
+              <article><b>02</b><span>Acceso por rol antes de invocar la IA.</span></article>
+              <article><b>03</b><span>Respuesta crítica exige abrir la cita.</span></article>
+              <article><b>04</b><span>Sin automatizar decisiones de seguridad.</span></article>
+              <article><b>05</b><span>Registro de consultas y revisión periódica.</span></article>
+              <article><b>06</b><span>Contenido sensible fuera del piloto inicial.</span></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section pilot-section" id="piloto">
+          <div class="section-heading light compact">
+            <div>
+              <span class="section-number">06 / PILOTO Y VALOR</span>
+              <h2>Probar pequeño.<br />Medir en serio. Escalar con evidencia.</h2>
+            </div>
+            <p>Un piloto de ocho semanas sobre un proceso, una faena y un grupo controlado.</p>
+          </div>
+
+          <div class="pilot-grid">
+            <div class="timeline">
+              <article>
+                <span>01</span>
+                <div><small>SEMANA 1–2</small><h3>Descubrir</h3><p>Proceso, permisos, corpus y línea base.</p></div>
+              </article>
+              <article>
+                <span>02</span>
+                <div><small>SEMANA 3–4</small><h3>Configurar</h3><p>Integración, OCR, espacio y controles.</p></div>
+              </article>
+              <article>
+                <span>03</span>
+                <div><small>SEMANA 5–6</small><h3>Validar</h3><p>Preguntas patrón, seguridad y usuarios.</p></div>
+              </article>
+              <article>
+                <span>04</span>
+                <div><small>SEMANA 7–8</small><h3>Medir</h3><p>Resultados, brechas y caso de escalamiento.</p></div>
+              </article>
+            </div>
+
+            <div class="calculator">
+              <div class="calculator-head">
+                <div><span class="mini-label copper">SIMULADOR</span><h3>Valor potencial</h3></div>
+                <span class="hypothesis">Hipótesis editable</span>
+              </div>
+              <div class="calculator-inputs">
+                <label>
+                  <span>Usuarios del proceso <output id="usersOut">120</output></span>
+                  <input id="users" type="range" min="20" max="500" step="10" value="120" />
+                </label>
+                <label>
+                  <span>Consultas por día <output id="queriesOut">2</output></span>
+                  <input id="queries" type="range" min="1" max="8" step="1" value="2" />
+                </label>
+                <label>
+                  <span>Minutos actuales <output id="currentOut">12</output></span>
+                  <input id="current" type="range" min="3" max="45" step="1" value="12" />
+                </label>
+                <label>
+                  <span>Minutos con solución <output id="futureOut">4</output></span>
+                  <input id="future" type="range" min="1" max="20" step="1" value="4" />
+                </label>
+                <label>
+                  <span>Adopción estimada <output id="adoptionOut">65%</output></span>
+                  <input id="adoption" type="range" min="10" max="100" step="5" value="65" />
+                </label>
+              </div>
+              <div class="calculator-result">
+                <div><small>HORAS RECUPERADAS / AÑO</small><strong id="hoursResult">0</strong></div>
+                <div><small>EQUIVALENTE EN JORNADAS</small><strong id="daysResult">0</strong></div>
+              </div>
+              <p>
+                Proyección de productividad, no ahorro garantizado. Considera 220 días y jornadas
+                de 8 horas; debe reemplazarse con línea base del piloto.
+              </p>
+            </div>
+          </div>
+
+          <div class="success-metrics">
+            <article><small>PRECISIÓN</small><strong>≥ 90%</strong><span>respuestas patrón aceptadas</span></article>
+            <article><small>TRAZABILIDAD</small><strong>100%</strong><span>respuestas críticas con cita</span></article>
+            <article><small>EFICIENCIA</small><strong>− 40%</strong><span>tiempo medio de consulta</span></article>
+            <article><small>ADOPCIÓN</small><strong>≥ 70%</strong><span>usuarios activos semanales</span></article>
+          </div>
+          <p class="target-note">Metas propuestas para validar durante el piloto; no son resultados del caso Veltis.</p>
+        </section>
+
+        <section class="section sources-section" id="fuentes">
+          <div class="section-heading compact">
+            <div>
+              <span class="section-number">07 / EVIDENCIA</span>
+              <h2>Base documental de la propuesta.</h2>
+            </div>
+            <p>Fuentes primarias para capacidades y normativa; prensa usada solo como contexto.</p>
+          </div>
+          <div class="source-list">
+            <a href="https://www.bcn.cl/leychile/navegar?idNorma=221064" target="_blank" rel="noreferrer">
+              <span>01</span><div><small>NORMATIVA PRIMARIA</small><strong>Reglamento de Seguridad Minera · DS 132</strong></div><b>↗</b>
+            </a>
+            <a href="https://business.adobe.com/products/acrobat-business.html" target="_blank" rel="noreferrer">
+              <span>02</span><div><small>PRODUCTO</small><strong>Adobe Acrobat Studio for Enterprise</strong></div><b>↗</b>
+            </a>
+            <a href="https://developer.adobe.com/document-services/docs/overview/security" target="_blank" rel="noreferrer">
+              <span>03</span><div><small>ARQUITECTURA</small><strong>PDF Services · Seguridad, privacidad y cumplimiento</strong></div><b>↗</b>
+            </a>
+            <a href="https://www.adobe.com/trust/compliance/compliance-list.html" target="_blank" rel="noreferrer">
+              <span>04</span><div><small>CONFIANZA</small><strong>Adobe Trust Center · Certificaciones por producto</strong></div><b>↗</b>
+            </a>
+            <a href="https://www.reporteminero.cl/noticia/tecnologia/2026/09/ia-mineria-asistentes-inteligentes-veltis-latam-softwareone" target="_blank" rel="noreferrer">
+              <span>05</span><div><small>CONTEXTO COMERCIAL</small><strong>Caso Veltis Latam × SoftwareOne</strong></div><b>↗</b>
+            </a>
+            <a href="https://www.bcn.cl/balance-legislativo/detalle/ficha_LEY_21719_2024-12-13" target="_blank" rel="noreferrer">
+              <span>06</span><div><small>PRIVACIDAD</small><strong>Ley 21.719 · Vigencia 1 diciembre 2026</strong></div><b>↗</b>
+            </a>
+            <a href="https://www.adobe.com/acrobat/about-adobe-pdf.html" target="_blank" rel="noreferrer">
+              <span>07</span><div><small>TRAYECTORIA</small><strong>Adobe creó el PDF · Historia oficial</strong></div><b>↗</b>
+            </a>
+            <a href="https://business.adobe.com/products/sign-solutions.html" target="_blank" rel="noreferrer">
+              <span>08</span><div><small>FIRMA Y TRAZABILIDAD</small><strong>Adobe Acrobat Sign Solutions · Seguridad y auditoría</strong></div><b>↗</b>
+            </a>
+            <a href="https://blog.adobe.com/en/publish/2024/06/12/pfeiffer-report-acrobat-ai-assistant-helps-knowledge-workers-complete-document-related-tasks-4x-faster-average" target="_blank" rel="noreferrer">
+              <span>09</span><div><small>PRODUCTIVIDAD</small><strong>Pfeiffer Report · Benchmark de Acrobat AI Assistant</strong></div><b>↗</b>
+            </a>
+          </div>
+
+          <div class="closing-card">
+            <div>
+              <span class="eyebrow"><span></span> SIGUIENTE DECISIÓN</span>
+              <h2>No vendamos una herramienta.<br />Diseñemos un resultado operacional.</h2>
+            </div>
+            <a class="button primary light-button" href="#piloto">Comenzar por el piloto <span>→</span></a>
+          </div>
+        </section>
+
+        <footer>
+          <span>Adobe Acrobat Studio · Propuesta para minería</span>
+          <span>Información verificada al 09.09.2026</span>
+        </footer>
+      </main>
+    </div>
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
