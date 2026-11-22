@@ -57,7 +57,7 @@ const journeys = {
     title: "La persona pregunta; el sistema responde con contexto.",
     steps: [
       "Teams recibe la consulta y confirma identidad y rol.",
-      "El agente recupera la versión autorizada desde SharePoint.",
+      "El agente recupera la versión autorizada desde el almacenamiento oficial.",
       "Acrobat Studio permite profundizar y verificar la cita documental.",
     ],
   },
@@ -88,7 +88,7 @@ const useCases = [
     title: "Consulta previa a una tarea crítica",
     description:
       "Encontrar rápidamente el procedimiento vigente y abrir la sección exacta antes de ejecutar.",
-    tech: ["Agente AWS", "Acrobat Studio"],
+    tech: ["Agente", "Acrobat Studio"],
     article: "Arts. 25–26",
     value: "Alta prioridad",
     problem:

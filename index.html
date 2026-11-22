@@ -136,6 +136,53 @@
             Los dos primeros datos provienen del comunicado del caso; no representan resultados
             financieros ni de seguridad.
           </p>
+
+          <div class="solves-panel">
+            <div class="solves-intro">
+              <span class="mini-label">¿QUÉ RESUELVE LA SOLUCIÓN?</span>
+              <h2>Convierte el conocimiento documental de la faena en respuestas verificables, en el momento en que se necesitan.</h2>
+              <p>
+                El flujo une tres capas: el <b>almacenamiento</b> conserva la versión oficial y sus
+                permisos; un <b>agente</b> interpreta la consulta y recupera solo los documentos
+                autorizados; <b>Acrobat Studio</b> analiza ese conjunto acotado y responde con citas
+                a la página exacta. No es un chatbot más: es un circuito controlado entre la
+                pregunta, la fuente vigente y la acción.
+              </p>
+            </div>
+            <div class="solves-grid">
+              <article>
+                <small>RESUELVE</small>
+                <h3>Búsqueda fragmentada</h3>
+                <p><span>Cómo</span>Recuperación por rol desde la fuente oficial, sin recorrer carpetas ni sitios.</p>
+                <strong>Menos tiempo buscando, más tiempo ejecutando.</strong>
+              </article>
+              <article>
+                <small>RESUELVE</small>
+                <h3>Versiones obsoletas</h3>
+                <p><span>Cómo</span>Solo se consulta la revisión vigente y cada respuesta enlaza su cita.</p>
+                <strong>Decisiones operacionales sobre información correcta.</strong>
+              </article>
+              <article>
+                <small>RESUELVE</small>
+                <h3>Evidencia dispersa</h3>
+                <p><span>Cómo</span>OCR, extracción y expedientes normalizados; firmas con registro de auditoría.</p>
+                <strong>Cumplimiento del DS 132 demostrable, no solo declarado.</strong>
+              </article>
+              <article>
+                <small>RESUELVE</small>
+                <h3>Conocimiento inmóvil</h3>
+                <p><span>Cómo</span>Comparación de incidentes y conversión en material de capacitación.</p>
+                <strong>Aprendizaje preventivo que llega a terreno.</strong>
+              </article>
+            </div>
+            <div class="solves-value">
+              <span>VALOR REAL</span>
+              <p>
+                Reduce el tiempo entre una pregunta y una acción segura, y deja registro de qué
+                documento respaldó cada decisión.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section class="section" id="oportunidad">
@@ -201,8 +248,8 @@
               <h2>Una arquitectura conjunta.<br />Cada plataforma hace lo que mejor sabe.</h2>
             </div>
             <p>
-              Acrobat Studio es la experiencia documental protagonista: complementa la solución
-              multiagente sin reemplazar la búsqueda corporativa ni los permisos de SharePoint.
+              Acrobat Studio es la experiencia documental protagonista: complementa al agente
+              corporativo sin reemplazar la búsqueda ni los permisos del repositorio oficial.
             </p>
           </div>
 
@@ -216,27 +263,67 @@
 
           <div class="architecture">
             <div class="architecture-flow">
-              <article class="architecture-node source active" data-node="source">
-                <div class="node-top"><span>01</span><i></i></div>
-                <small>FUENTE DE VERDAD</small>
-                <h3>SharePoint</h3>
-                <p>Versiones, clasificación y permisos corporativos.</p>
-              </article>
+              <div class="flow-column">
+                <article class="architecture-node source active" data-node="source">
+                  <div class="node-top"><span>01</span><i></i></div>
+                  <small>FUENTE DE VERDAD</small>
+                  <h3>Almacenamiento</h3>
+                  <p>Repositorio oficial (SharePoint u otro gestor documental): versiones, clasificación y permisos corporativos.</p>
+                </article>
+              </div>
               <span class="flow-arrow">→</span>
-              <article class="architecture-node engine" data-node="engine">
-                <div class="node-top"><span>02</span><i></i></div>
-                <small>ORQUESTACIÓN</small>
-                <h3>SoftwareOne + AWS</h3>
-                <p>Agentes, búsqueda transversal, perfiles y Teams.</p>
-              </article>
+              <div class="flow-column">
+                <article class="architecture-node engine" data-node="engine">
+                  <div class="node-top"><span>02</span><i></i></div>
+                  <small>ORQUESTACIÓN</small>
+                  <h3>Agente</h3>
+                  <p>Agente conversacional con conectores nativos, disponible en el canal de trabajo (por ejemplo, Teams).</p>
+                </article>
+                <span class="down-arrow" aria-hidden="true">↓</span>
+                <div class="node-role">
+                  <span class="mini-label">ROL EN EL PROCESO</span>
+                  <p>
+                    Recibe la pregunta, valida identidad y rol, localiza la versión vigente en el
+                    almacenamiento y entrega a Acrobat Studio solo los documentos autorizados.
+                  </p>
+                  <ul>
+                    <li>Interpreta la intención de la consulta</li>
+                    <li>Respeta los permisos del repositorio</li>
+                    <li>Deriva con el contexto correcto</li>
+                  </ul>
+                  <em>No crea contenido normativo ni toma decisiones de seguridad.</em>
+                </div>
+              </div>
               <span class="flow-arrow">→</span>
-              <article class="architecture-node adobe" data-node="adobe">
-                <div class="node-top"><span>03</span><i></i></div>
-                <small>EXPERIENCIA DOCUMENTAL</small>
-                <h3>Acrobat Studio</h3>
-                <p>Comprender, verificar, colaborar y comunicar.</p>
-              </article>
+              <div class="flow-column">
+                <article class="architecture-node adobe" data-node="adobe">
+                  <div class="node-top"><span>03</span><i></i></div>
+                  <small>EXPERIENCIA DOCUMENTAL</small>
+                  <h3>Acrobat Studio</h3>
+                  <p>Comprender, verificar, colaborar y comunicar.</p>
+                </article>
+                <span class="down-arrow adobe-arrow" aria-hidden="true">↓</span>
+                <div class="node-role adobe-role">
+                  <span class="mini-label">ROL Y ALCANCE</span>
+                  <p>
+                    Convierte los documentos entregados por el agente en comprensión verificable:
+                    responde con citas a la página exacta, compara revisiones y transforma el
+                    contenido aprobado en piezas de comunicación.
+                  </p>
+                  <ul>
+                    <li>AI Assistant con citas verificables</li>
+                    <li>PDF Spaces de hasta 100 archivos</li>
+                    <li>Comparación, protección y revisión de PDF</li>
+                    <li>Creación con Adobe Express Premium</li>
+                  </ul>
+                  <em>No indexa repositorios completos ni reemplaza sus permisos.</em>
+                </div>
+              </div>
             </div>
+            <p class="agnostic-note">
+              La capa de agente es intercambiable: puede implementarse con plataformas que ofrecen
+              integración nativa con Acrobat, sin atar la propuesta a un único proveedor.
+            </p>
 
             <div class="architecture-detail">
               <div>
@@ -599,6 +686,83 @@
             <article><small>ADOPCIÓN</small><strong>≥ 70%</strong><span>usuarios activos semanales</span></article>
           </div>
           <p class="target-note">Metas propuestas para validar durante el piloto; no son resultados del caso Veltis.</p>
+
+          <div class="licensing">
+            <div class="licensing-head">
+              <div>
+                <span class="mini-label copper">QUÉ SE LICENCIA</span>
+                <h3>Tres componentes, una sola propuesta.</h3>
+              </div>
+              <p>El dimensionamiento final se ajusta con el volumen real medido durante el piloto.</p>
+            </div>
+            <div class="license-grid">
+              <article class="license-card">
+                <small>PLATAFORMA DE AGENTE</small>
+                <strong>Copilot Studio</strong>
+                <span class="license-qty">Según consumo</span>
+                <p>
+                  Licencia de agente o paquetes de créditos según el consumo de mensajes y acciones.
+                  Se dimensiona con el volumen de consultas del piloto.
+                </p>
+              </article>
+              <article class="license-card adobe-license">
+                <small>EXPERIENCIA DOCUMENTAL</small>
+                <strong>Adobe Acrobat Studio</strong>
+                <span class="license-qty">100+ licencias</span>
+                <p>
+                  Licencias por usuario. Incluye Acrobat Pro, AI Assistant, PDF Spaces y Adobe
+                  Express Premium.
+                </p>
+              </article>
+              <article class="license-card">
+                <small>SERVICIOS PROFESIONALES</small>
+                <strong>Implementación y adopción</strong>
+                <span class="license-qty">45 horas</span>
+                <ul class="hours-list">
+                  <li><span>Configuración</span><b>12 h</b></li>
+                  <li><span>Estandarización documental</span><b>8 h</b></li>
+                  <li><span>Entrenamiento del agente</span><b>8 h</b></li>
+                  <li><span>Capacitaciones por rol</span><b>10 h</b></li>
+                  <li><span>Soporte nivel 1 en adopción</span><b>7 h</b></li>
+                </ul>
+                <em>Distribución referencial, ajustable por proyecto.</em>
+              </article>
+            </div>
+            <p class="license-note">
+              Opcional: PDF Services API se cotiza por consumo si el proyecto requiere OCR o
+              procesamiento masivo de documentos.
+            </p>
+          </div>
+
+          <div class="adoption">
+            <div class="adoption-head">
+              <span class="mini-label copper">TIEMPO DE ADOPCIÓN ESTIMADO</span>
+              <strong>4 a 6 meses</strong>
+              <p>Hasta un uso autónomo y estable en la organización.</p>
+            </div>
+            <div class="adoption-track">
+              <article>
+                <small>MES 1–2</small>
+                <h4>Piloto</h4>
+                <p>Ocho semanas sobre un proceso, una faena y un grupo controlado. Primeras ganancias visibles en las semanas 4–6.</p>
+              </article>
+              <article>
+                <small>MES 3–4</small>
+                <h4>Despliegue guiado</h4>
+                <p>Ampliación a 100+ usuarios, capacitaciones por rol y soporte nivel 1 activo.</p>
+              </article>
+              <article>
+                <small>MES 5–6</small>
+                <h4>Consolidación</h4>
+                <p>Uso autónomo, meta de ≥ 70% de usuarios activos semanales y caso de escalamiento.</p>
+              </article>
+            </div>
+            <p class="adoption-note">
+              Estimación referencial para organizaciones con procesos documentales regulados y
+              operación por turnos. Depende del estado del repositorio, la gestión del cambio y la
+              disponibilidad de usuarios clave.
+            </p>
+          </div>
         </section>
 
         <section class="section sources-section" id="fuentes">
