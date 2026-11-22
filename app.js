@@ -375,8 +375,21 @@ document.querySelector(".view-toggle").addEventListener("click", (event) => {
   document.body.classList.toggle("technical-view", button.dataset.view === "technical");
 });
 
-const ranges = ["users", "queries", "current", "future", "adoption"];
+const ranges = ["users", "queries", "current", "future", "adoption", "rate"];
 const formatter = new Intl.NumberFormat("es-CL", { maximumFractionDigits: 0 });
+const usd = (value) => `US$ ${formatter.format(value)}`;
+
+// Supuestos de costo (USD). Ajustar aquí si cambian los precios cotizados.
+const pricing = {
+  workDays: 220,
+  acrobatPerUserYear: 306,
+  servicesHours: 45,
+  servicesRate: 40,
+  copilotPackMonth: 200, // paquete de 25.000 créditos/mes
+  creditsPerPack: 25000,
+  creditsPerQuery: 12, // respuesta generativa basada en documentos del repositorio
+  creditMargin: 1.2, // margen por acciones del agente
+};
 
 function updateRangeFill(input) {
   const percentage =
@@ -384,26 +397,54 @@ function updateRangeFill(input) {
   input.style.setProperty("--fill", `${percentage}%`);
 }
 
-function calculateValue() {
-  const users = Number(document.querySelector("#users").value);
-  const queries = Number(document.querySelector("#queries").value);
-  const current = Number(document.querySelector("#current").value);
-  const future = Number(document.querySelector("#future").value);
-  const adoption = Number(document.querySelector("#adoption").value) / 100;
-  const minutesSaved = Math.max(0, current - future);
-  const hours = (users * queries * minutesSaved * 220 * adoption) / 60;
-  const days = hours / 8;
+function setText(id, text) {
+  document.querySelector(`#${id}`).textContent = text;
+}
 
-  document.querySelector("#hoursResult").textContent = formatter.format(hours);
-  document.querySelector("#daysResult").textContent = formatter.format(days);
+function calculateValue() {
+  const value = (id) => Number(document.querySelector(`#${id}`).value);
+  const users = value("users");
+  const queries = value("queries");
+  const adoption = value("adoption") / 100;
+  const minutesSaved = Math.max(0, value("current") - value("future"));
+
+  const yearlyQueries = users * queries * pricing.workDays * adoption;
+  const hours = (yearlyQueries * minutesSaved) / 60;
+  const recovered = hours * value("rate");
+
+  const monthlyCredits = (yearlyQueries / 12) * pricing.creditsPerQuery * pricing.creditMargin;
+  const packs = Math.max(1, Math.ceil(monthlyCredits / pricing.creditsPerPack));
+  const acrobatCost = users * pricing.acrobatPerUserYear;
+  const copilotCost = packs * pricing.copilotPackMonth * 12;
+  const servicesCost = pricing.servicesHours * pricing.servicesRate;
+  const investment = acrobatCost + copilotCost + servicesCost;
+
+  const roi = ((recovered - investment) / investment) * 100;
+  const paybackMonths = recovered > 0 ? investment / (recovered / 12) : Infinity;
+
+  setText("hoursResult", formatter.format(hours));
+  setText("daysResult", formatter.format(hours / 8));
+  setText("valueResult", usd(recovered));
+  setText("investResult", usd(investment));
+  setText("roiResult", `${roi >= 0 ? "+" : ""}${formatter.format(roi)}%`);
+  setText(
+    "paybackResult",
+    paybackMonths > 36 ? "más de 36 meses" : `${paybackMonths.toFixed(1).replace(".", ",")} meses`,
+  );
+  document.querySelector(".roi-tile").classList.toggle("negative", roi < 0);
+  setText("licCount", formatter.format(users));
+  setText("packCount", formatter.format(packs));
+  setText("acrobatCost", usd(acrobatCost));
+  setText("copilotCost", usd(copilotCost));
+  setText("servicesCost", usd(servicesCost));
 }
 
 ranges.forEach((id) => {
   const input = document.querySelector(`#${id}`);
   const output = document.querySelector(`#${id}Out`);
-  const suffix = id === "adoption" ? "%" : "";
+  const format = (v) => (id === "adoption" ? `${v}%` : id === "rate" ? `US$ ${v}` : v);
   const update = () => {
-    output.textContent = `${input.value}${suffix}`;
+    output.textContent = format(input.value);
     updateRangeFill(input);
     calculateValue();
   };

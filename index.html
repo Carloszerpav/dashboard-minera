@@ -643,13 +643,13 @@
 
             <div class="calculator">
               <div class="calculator-head">
-                <div><span class="mini-label copper">SIMULADOR</span><h3>Valor potencial</h3></div>
+                <div><span class="mini-label copper">SIMULADOR</span><h3>Valor y retorno</h3></div>
                 <span class="hypothesis">Hipótesis editable</span>
               </div>
               <div class="calculator-inputs">
                 <label>
-                  <span>Usuarios del proceso <output id="usersOut">120</output></span>
-                  <input id="users" type="range" min="20" max="500" step="10" value="120" />
+                  <span>Usuarios licenciados <output id="usersOut">120</output></span>
+                  <input id="users" type="range" min="100" max="500" step="10" value="120" />
                 </label>
                 <label>
                   <span>Consultas por día <output id="queriesOut">2</output></span>
@@ -667,11 +667,42 @@
                   <span>Adopción estimada <output id="adoptionOut">65%</output></span>
                   <input id="adoption" type="range" min="10" max="100" step="5" value="65" />
                 </label>
+                <label>
+                  <span>Valor hora del trabajador <output id="rateOut">US$ 30</output></span>
+                  <input id="rate" type="range" min="15" max="80" step="5" value="30" />
+                </label>
               </div>
               <div class="calculator-result">
-                <div><small>HORAS RECUPERADAS / AÑO</small><strong id="hoursResult">0</strong></div>
-                <div><small>EQUIVALENTE EN JORNADAS</small><strong id="daysResult">0</strong></div>
+                <div>
+                  <small>HORAS RECUPERADAS / AÑO</small><strong id="hoursResult">0</strong>
+                  <span><b id="daysResult">0</b> jornadas</span>
+                </div>
+                <div>
+                  <small>VALOR RECUPERADO / AÑO</small><strong id="valueResult">0</strong>
+                  <span>Horas × valor hora</span>
+                </div>
+                <div>
+                  <small>INVERSIÓN AÑO 1</small><strong id="investResult">0</strong>
+                  <span>Licencias + consumo + servicios</span>
+                </div>
+                <div class="roi-tile">
+                  <small>ROI AÑO 1</small><strong id="roiResult">0</strong>
+                  <span>Recupera en <b id="paybackResult">0</b></span>
+                </div>
               </div>
+              <details class="cost-breakdown">
+                <summary>Ver detalle de la inversión</summary>
+                <ul>
+                  <li><span>Acrobat Studio · <em id="licCount">120</em> licencias × US$ 306/año</span><b id="acrobatCost">0</b></li>
+                  <li><span>Copilot Studio · <em id="packCount">0</em> paquete(s) de 25.000 créditos/mes</span><b id="copilotCost">0</b></li>
+                  <li><span>Servicios profesionales · 45 h × US$ 40</span><b id="servicesCost">0</b></li>
+                </ul>
+                <p>
+                  Copilot Studio: US$ 200 por paquete mensual; se estiman ~12 créditos por respuesta
+                  basada en documentos del repositorio, más 20% de margen por acciones del agente.
+                  Precio referencial sujeto a cotización.
+                </p>
+              </details>
               <p>
                 Proyección de productividad, no ahorro garantizado. Considera 220 días y jornadas
                 de 8 horas; debe reemplazarse con línea base del piloto.
