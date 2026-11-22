@@ -16,10 +16,9 @@ Abrir `http://localhost:4173`.
 
 ## Alcance
 
-- Resume el caso público Veltis Latam–SoftwareOne sin presentar sus objetivos como resultados.
 - Vincula casos de uso con artículos seleccionados del Reglamento de Seguridad Minera, DS 132.
 - Desarrolla seis escenarios mineros interactivos con problemática, solución, flujo y resguardos.
-- Separa las responsabilidades de SharePoint, la capa multiagente y Adobe.
+- Separa las responsabilidades del almacenamiento, la capa de agente y Adobe.
 - Visualiza el benchmark de productividad de Acrobat AI Assistant realizado por Pfeiffer Consulting.
 - Incluye controles, límites conocidos, piloto de ocho semanas y simulador de productividad.
 - Permite alternar entre vista ejecutiva y técnica.
@@ -34,7 +33,6 @@ ni beneficios garantizados.
 - [Adobe PDF Services: Security, Privacy and Compliance](https://developer.adobe.com/document-services/docs/overview/security)
 - [Adobe Trust Center: certificaciones por producto](https://www.adobe.com/trust/compliance/compliance-list.html)
 - [Pfeiffer Report: Acrobat AI Assistant](https://blog.adobe.com/en/publish/2024/06/12/pfeiffer-report-acrobat-ai-assistant-helps-knowledge-workers-complete-document-related-tasks-4x-faster-average)
-- [Caso Veltis Latam–SoftwareOne](https://www.reporteminero.cl/noticia/tecnologia/2026/09/ia-mineria-asistentes-inteligentes-veltis-latam-softwareone)
 - [Ley 21.719 de protección de datos personales](https://www.bcn.cl/balance-legislativo/detalle/ficha_LEY_21719_2024-12-13)
 
 Información comprobada al 14 de septiembre de 2026.
